@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Ma Todo List perso</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<!-- Todo:
+            - créer le formulaire de création de tâche
+            - Afficher les tâches en cours avec boutons permettant de supprimer la tâche/ de la valider
+            - Afficher une barre de progression des tâches en cours
+            - Faire un petit design rapide
+            - Créer un compteur de tâche réalisées
+            - 
+        -->
+
+        <div class="main">
+            <div class="dashboard">
+                <div class="newTask">
+                    <div class="newTaskContainer">
+                        <h1 class="newTaskTitle">NEW TASK</h1>
+                        <input type="text" id="taskName">
+                        <button class="addButton" onclick="newTask()">ADD</button>
+                    </div>
+                    
+                </div>
+                <div class="displayTask">
+                    <div class="displayTaskContainer">
+                        <table id="displayTasksTable">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><h1>YOUR TASKS</h1></th>
+                                </tr>
+                            </thead>
+                            <tbody id="displayTasks">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-back"></div>
+                <div class="modal-container">
+                  Une task ne peut pas être vide !<br />
+                  <!-- <button id='modal-close'>Exit</button> -->
+                </div>
+              </div>
+        </div>
+</body>
+</html>
